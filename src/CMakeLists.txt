@@ -16,7 +16,7 @@ add_library(${TARGET} STATIC
     ../include/mcp_sse_client.h
 )
 
-target_link_libraries(${TARGET} PUBLIC ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(${TARGET} PUBLIC ${CMAKE_THREAD_LIBS_INIT} nlohmann_json::nlohmann_json)
 
 # If OpenSSL is found, link the OpenSSL libraries
 if(OPENSSL_FOUND)

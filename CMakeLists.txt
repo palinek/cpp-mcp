@@ -29,6 +29,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Find required packages
 find_package(Threads REQUIRED)
+find_package(nlohmann_json "3.11.3" REQUIRED)
 
 option(MCP_SSL "Enable SSL support" OFF)
 
